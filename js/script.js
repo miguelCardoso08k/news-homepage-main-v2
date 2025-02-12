@@ -8,6 +8,7 @@ const openMenu = () => {
   menu.classList.add("animate-open-menu");
   filter.classList.remove("animate-filter-off");
   filter.classList.add("animate-filter-on");
+  menu.classList.add("flex");
   menu.classList.remove("hidden");
   menu.classList.remove("right-[-70%]");
   menu.classList.add("right-0");
