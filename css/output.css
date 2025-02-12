@@ -625,9 +625,6 @@
   .animate-open-menu {
     animation: var(--animate-open-menu);
   }
-  .cursor-pointer {
-    cursor: pointer;
-  }
   .resize {
     resize: both;
   }
@@ -663,6 +660,9 @@
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
+  }
+  .gap-14 {
+    gap: calc(var(--spacing) * 14);
   }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
@@ -791,14 +791,8 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .delay-1 {
-    transition-delay: 1ms;
-  }
   .delay-100 {
     transition-delay: 100ms;
-  }
-  .delay-1000 {
-    transition-delay: 1000ms;
   }
   .delay-150 {
     transition-delay: 150ms;
@@ -832,13 +826,6 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-softRed);
-      }
-    }
-  }
-  .hover\:text-white {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-white);
       }
     }
   }
@@ -952,6 +939,11 @@
       align-self: flex-start;
     }
   }
+  .lg\:px-3 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 3);
+    }
+  }
   .lg\:px-6 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 6);
@@ -960,6 +952,16 @@
   .lg\:px-24 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 24);
+    }
+  }
+  .lg\:px-32 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 32);
+    }
+  }
+  .lg\:px-36 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 36);
     }
   }
   .lg\:py-20 {
