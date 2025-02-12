@@ -595,12 +595,6 @@
   .h-full {
     height: 100%;
   }
-  .min-h-full {
-    min-height: 100%;
-  }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
-  }
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
@@ -612,9 +606,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .min-w-full {
-    min-width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -633,6 +624,9 @@
   }
   .animate-open-menu {
     animation: var(--animate-open-menu);
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   .resize {
     resize: both;
@@ -676,18 +670,9 @@
   .gap-y-6 {
     row-gap: calc(var(--spacing) * 6);
   }
-  .overflow-hidden {
-    overflow: hidden;
-  }
-  .overflow-x-hidden {
-    overflow-x: hidden;
-  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
-  }
-  .bg-amber-600 {
-    background-color: var(--color-amber-600);
   }
   .bg-offWhite {
     background-color: var(--color-offWhite);
@@ -725,25 +710,9 @@
   .font-inter {
     font-family: var(--font-inter);
   }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
-  .text-6xl {
-    font-size: var(--text-6xl);
-    line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
   .text-lg {
     font-size: var(--text-lg);
@@ -822,8 +791,14 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .delay-1 {
+    transition-delay: 1ms;
+  }
   .delay-100 {
     transition-delay: 100ms;
+  }
+  .delay-1000 {
+    transition-delay: 1000ms;
   }
   .delay-150 {
     transition-delay: 150ms;
@@ -831,6 +806,20 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
+  }
+  .hover\:bg-veryDarkBlue {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-veryDarkBlue);
+      }
+    }
+  }
+  .hover\:text-offWhite {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-offWhite);
+      }
+    }
   }
   .hover\:text-softOrange {
     &:hover {
@@ -843,6 +832,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-softRed);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
       }
     }
   }
@@ -919,11 +915,6 @@
   .lg\:grid-cols-subgrid {
     @media (width >= 64rem) {
       grid-template-columns: subgrid;
-    }
-  }
-  .lg\:grid-rows-2 {
-    @media (width >= 64rem) {
-      grid-template-rows: repeat(2, minmax(0, 1fr));
     }
   }
   .lg\:items-start {

@@ -27,13 +27,15 @@
   </head>
   <body class="font-inter flex flex-col gap-4 p-4 lg:px-24 lg:py-20 lg:gap-14">
     <header class="w-full h-12 flex items-center justify-between pt-2">
-      <span>
-        <img
-          class="h-7 w-12 lg:h-12 lg:w-16"
-          src="assets/images/logo.svg"
-          alt="Logo: W."
-        />
-      </span>
+      <a href="">
+        <span>
+          <img
+            class="h-7 w-12 lg:h-12 lg:w-16"
+            src="assets/images/logo.svg"
+            alt="Logo: W."
+          />
+        </span>
+      </a>
       <span>
         <button id="open-menu" class="md:hidden">
           <img src="assets/images/icon-menu.svg" alt="" />
@@ -53,57 +55,53 @@
     <main
       class="flex flex-col gap-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12"
     >
-      <div
-        class="flex flex-col w-full gap-5 lg:col-span-2 lg:row-end-2 lg:grid lg:grid-cols-2 lg:gap-x-8"
-      >
-        <div class="lg:col-span-2 lg:self-start">
-          <picture>
-            <source
-              media="(min-width: 768px)"
-              srcset="assets/images/image-web-3-desktop.jpg"
-            />
-            <source
-              media="(min-width: 767px)"
-              srcset="assets/images/image-web-3-mobile.jpg"
-            />
-
-            <img
-              src="assets/images/image-web-3-mobile.jpg"
-              alt="Arte abstrata"
-            />
-          </picture>
-        </div>
-        <div>
-          <h1 class="text-veryDarkBlue text-xl lg:text-6xl font-bold text-left">
-            The Bright Future of Web 3.0?
-          </h1>
-        </div>
-        <div class="flex flex-col gap-y-6">
-          <div>
-            <p class="text-darkGrayishBlue font-medium lg:text-lg">
-              We dive into the next evolution of the web that claims to put the
-              power of the platforms back <br />
-              into the hands of the people. But is it really fulfilling its
-              promise?
-            </p>
+      <section class="flex flex-col w-full gap-5 lg:col-span-2 lg:row-end-2 lg:grid lg:grid-cols-2 lg:gap-x-8">
+          <div class="lg:col-span-2 lg:self-start">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="assets/images/image-web-3-desktop.jpg"
+              />
+              <source
+                media="(min-width: 767px)"
+                srcset="assets/images/image-web-3-mobile.jpg"
+              />
+              <img
+                src="assets/images/image-web-3-mobile.jpg"
+                alt="Arte abstrata"
+              />
+            </picture>
           </div>
-
           <div>
-            <button
-              class="tracking-[.20em] bg-softRed px-9 py-3 text-veryDarkBlue text-sm font-semibold transform: uppercase"
-            >
-              Read more
-            </button>
+            <h1 class="text-veryDarkBlue text-xl lg:text-6xl font-bold text-left">
+              The Bright Future of Web 3.0?
+            </h1>
           </div>
-        </div>
-      </div>
+          <div class="flex flex-col gap-y-6">
+            <div>
+              <p class="text-darkGrayishBlue font-medium lg:text-lg">
+                We dive into the next evolution of the web that claims to put the
+                power of the platforms back <br />
+                into the hands of the people. But is it really fulfilling its
+                promise?
+              </p>
+            </div>
+            <div>
+              <a href=""
+                class="tracking-[.20em] bg-softRed px-9 py-3 text-veryDarkBlue text-sm font-semibold transform: uppercase transition delay-150 ease-in-out hover:bg-veryDarkBlue hover:text-offWhite"
+              >
+                Read more
+              </a >
+            </div>
+          </div>
+      </section>
 
-      <div
+      <section
         class="bg-veryDarkBlue text-offWhite p-5 flex flex-col gap-5 lg:gap-7 lg:px-6"
       >
         <h1 class="text-softOrange text-3xl font-semibold lg:text-5xl">New</h1>
 
-        <div class="flex flex-col gap-3">
+        <article class="flex flex-col gap-3">
           <a
             href=""
             class="transition delay-150 ease-in-out hover:text-softOrange"
@@ -115,9 +113,9 @@
           <p class="text-grayishBlue lg:text-lg">
             Will hydrogen-fueled cars ever catch up to EVs?
           </p>
-        </div>
+        </article>
         <hr />
-        <div class="flex flex-col gap-3">
+        <article class="flex flex-col gap-3">
           <a
             href=""
             class="transition delay-100 ease-in-out hover:text-softOrange"
@@ -130,9 +128,9 @@
             What are the possible adverse effects of on-demand AI image
             generation?
           </p>
-        </div>
+        </article>
         <hr />
-        <div class="flex flex-col gap-3">
+        <article class="flex flex-col gap-3">
           <a
             href=""
             class="transition delay-100 ease-in-out hover:text-softOrange"
@@ -145,65 +143,72 @@
             Private funding by VC firms is down 50% YOY. We take a look at what
             that means.
           </p>
-        </div>
-      </div>
+        </article>
+      </section>
 
-      <div
+      <section
         class="flex flex-col gap-2 pt-2 lg:col-span-3 lg:grid lg:grid-cols-subgrid lg:items-start lg:gap-x-8"
       >
-        <div class="flex gap-4 lg:col-start-1 lg:gap-6">
+        <article class="flex gap-4 lg:col-start-1 lg:gap-6">
           <img
             class="w-24 lg:min-h-full"
             src="assets/images/image-retro-pcs.jpg"
             alt="retro-pcs"
           />
           <div class="flex flex-col gap-1">
-            <span class="text-softRed lg:text-4xl font-bold">01</span>
-            <h2 class="text-veryDarkBlue lg:text-2xl font-extrabold">
-              Reviving Retro PCs
-            </h2>
+            <span class="text-softRed text-3xl lg:text-4xl font-bold">01</span>
+            <a href="">
+              <h2 class="text-veryDarkBlue text-xl lg:text-2xl font-extrabold hover:text-softRed">
+                Reviving Retro PCs
+              </h2>
+            </a>
             <p class="text-darkGrayishBlue lg:text-xl">
-              What happens when old PCs are given modern upgrades?
+              What happens when old PCs <br> are given modern upgrades?
             </p>
           </div>
-        </div>
+        </article>
 
-        <div class="flex gap-4 lg:col-start-2 lg:gap-6">
+        <article class="flex gap-4 lg:col-start-2 lg:gap-6">
           <img
             class="w-24 lg:min-h-full"
             src="assets/images/image-top-laptops.jpg"
             alt="top-laptops"
           />
           <div class="flex flex-col gap-1">
-            <span class="text-softRed lg:text-4xl font-bold">02</span>
-            <h2 class="text-veryDarkBlue lg:text-2xl font-extrabold">
-              Top 10 Laptops of 2022
-            </h2>
+            <span class="text-softRed text-3xl lg:text-4xl font-bold">02</span>
+            <a href="">
+              <h2 class="text-veryDarkBlue text-xl lg:text-2xl font-extrabold hover:text-softRed">
+                Top 10 Laptops of 2022 
+              </h2>
+            </a>
             <p class="text-darkGrayishBlue lg:text-xl">
               Our best picks for various <br />
               needs and budgets.
             </p>
           </div>
-        </div>
+        </article>
 
-        <div class="flex gap-4 lg:col-start-3 lg:gap-6">
+        <article class="flex gap-4 lg:col-start-3 lg:gap-6">
           <img
             class="w-24 lg:min-h-full"
             src="assets/images/image-gaming-growth.jpg"
             alt="gaming-growth"
           />
           <div class="flex flex-col gap-1">
-            <span class="text-softRed lg:text-4xl font-bold">03</span>
-            <h2 class="text-veryDarkBlue lg:text-2xl font-extrabold">
-              The Growth of Gaming
-            </h2>
+            <span class="text-softRed text-3xl lg:text-4xl font-bold">03</span>
+            <a href=""">
+              <h2
+                class="text-veryDarkBlue text-xl lg:text-2xl font-extrabold hover:text-softRed"
+              >
+                The Growth of Gaming
+              </h2>
+            </a>
             <p class="text-darkGrayishBlue lg:text-xl">
-              How the pandemic has <br />
-              sparked fresh opportunities.
+              How the pandemic has sparked fresh opportunities.
             </p>
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
     </main>
 
     <footer>
@@ -231,11 +236,11 @@
       </div>
 
       <ul class="flex flex-col gap-5 text-darkGrayishBlue text-lg">
-        <li>Home</li>
-        <li>New</li>
-        <li>Popular</li>
-        <li>Trending</li>
-        <li>Categories</li>
+        <li><a href="">Home</a></li>
+        <li><a href="">New</a></li>
+        <li><a href="">Popular</a></li>
+        <li><a href="">Trending</a></li>
+        <li><a href="">Categories</a></li>
       </ul>
     </nav>
     <script src="js/script.js"></script>
