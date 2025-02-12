@@ -25,51 +25,219 @@
     </style>
     <link rel="stylesheet" href="./css/output.css" />
   </head>
-  <body class="font-inter text-softOrange bg-veryDarkBlue">
-    <div>Home New Popular Trending Categories</div>
+  <body class="font-inter flex flex-col gap-4 p-4 lg:px-24 lg:py-20 lg:gap-14">
+    <header class="w-full h-12 flex items-center justify-between pt-2">
+      <span>
+        <img
+          class="h-7 w-12 lg:h-12 lg:w-16"
+          src="assets/images/logo.svg"
+          alt="Logo: W."
+        />
+      </span>
+      <span>
+        <button id="open-menu" class="md:hidden">
+          <img src="assets/images/icon-menu.svg" alt="" />
+        </button>
+        <nav class="max-md:hidden">
+          <ul class="flex gap-10 text-darkGrayishBlue">
+            <li><a href="" class="hover:text-softRed">Home</a></li>
+            <li><a href="" class="hover:text-softRed">New</a></li>
+            <li><a href="" class="hover:text-softRed">Popular</a></li>
+            <li><a href="" class="hover:text-softRed">Trending</a></li>
+            <li><a href="" class="hover:text-softRed">Categories</a></li>
+          </ul>
+        </nav>
+      </span>
+    </header>
 
-    <div>The Bright Future of Web 3.0?</div>
+    <main
+      class="flex flex-col gap-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12"
+    >
+      <div
+        class="flex flex-col w-full gap-5 lg:col-span-2 lg:row-end-2 lg:grid lg:grid-cols-2 lg:gap-x-8"
+      >
+        <div class="lg:col-span-2 lg:self-start">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="assets/images/image-web-3-desktop.jpg"
+            />
+            <source
+              media="(min-width: 767px)"
+              srcset="assets/images/image-web-3-mobile.jpg"
+            />
 
-    <div>
-      We dive into the next evolution of the web that claims to put the power of
-      the platforms back into the hands of the people. But is it really
-      fulfilling its promise?
-    </div>
+            <img
+              src="assets/images/image-web-3-mobile.jpg"
+              alt="Arte abstrata"
+            />
+          </picture>
+        </div>
+        <div>
+          <h1 class="text-veryDarkBlue text-xl lg:text-6xl font-bold text-left">
+            The Bright Future of Web 3.0?
+          </h1>
+        </div>
+        <div class="flex flex-col gap-y-6">
+          <div>
+            <p class="text-darkGrayishBlue font-medium lg:text-lg">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back <br />
+              into the hands of the people. But is it really fulfilling its
+              promise?
+            </p>
+          </div>
 
-    <div>Read more</div>
+          <div>
+            <button
+              class="tracking-[.20em] bg-softRed px-9 py-3 text-veryDarkBlue text-sm font-semibold transform: uppercase"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+      </div>
 
-    <div>New</div>
+      <div
+        class="bg-veryDarkBlue text-offWhite p-5 flex flex-col gap-5 lg:gap-7 lg:px-6"
+      >
+        <h1 class="text-softOrange text-3xl font-semibold lg:text-5xl">New</h1>
 
-    <div>
-      Hydrogen VS Electric Cars Will hydrogen-fueled cars ever catch up to EVs?
-    </div>
-    <div>
-      The Downsides of AI Artistry What are the possible adverse effects of
-      on-demand AI image generation?
-    </div>
+        <div class="flex flex-col gap-3">
+          <a
+            href=""
+            class="transition delay-150 ease-in-out hover:text-softOrange"
+          >
+            <h2 class="text-xl font-bold lg:text-2xl">
+              Hydrogen VS Electric Cars
+            </h2>
+          </a>
+          <p class="text-grayishBlue lg:text-lg">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+        </div>
+        <hr />
+        <div class="flex flex-col gap-3">
+          <a
+            href=""
+            class="transition delay-100 ease-in-out hover:text-softOrange"
+          >
+            <h2 class="text-xl font-bold lg:text-2xl">
+              The Downsides of AI Artistry
+            </h2>
+          </a>
+          <p class="text-grayishBlue lg:text-lg">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </div>
+        <hr />
+        <div class="flex flex-col gap-3">
+          <a
+            href=""
+            class="transition delay-100 ease-in-out hover:text-softOrange"
+          >
+            <h2 class="text-xl font-bold lg:text-2xl">
+              Is VC Funding Drying Up?
+            </h2>
+          </a>
+          <p class="text-grayishBlue lg:text-lg">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </div>
 
-    <div>
-      Is VC Funding Drying Up? Private funding by VC firms is down 50% YOY. We
-      take a look at what that means.
-    </div>
+      <div
+        class="flex flex-col gap-2 pt-2 lg:col-span-3 lg:grid lg:grid-cols-subgrid lg:items-start lg:gap-x-8"
+      >
+        <div class="flex gap-4 lg:col-start-1 lg:gap-6">
+          <img
+            class="w-24 lg:min-h-full"
+            src="assets/images/image-retro-pcs.jpg"
+            alt="retro-pcs"
+          />
+          <div class="flex flex-col gap-1">
+            <span class="text-softRed lg:text-4xl font-bold">01</span>
+            <h2 class="text-veryDarkBlue lg:text-2xl font-extrabold">
+              Reviving Retro PCs
+            </h2>
+            <p class="text-darkGrayishBlue lg:text-xl">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
 
-    <div>
-      01 Reviving Retro PCs What happens when old PCs are given modern upgrades?
-    </div>
+        <div class="flex gap-4 lg:col-start-2 lg:gap-6">
+          <img
+            class="w-24 lg:min-h-full"
+            src="assets/images/image-top-laptops.jpg"
+            alt="top-laptops"
+          />
+          <div class="flex flex-col gap-1">
+            <span class="text-softRed lg:text-4xl font-bold">02</span>
+            <h2 class="text-veryDarkBlue lg:text-2xl font-extrabold">
+              Top 10 Laptops of 2022
+            </h2>
+            <p class="text-darkGrayishBlue lg:text-xl">
+              Our best picks for various <br />
+              needs and budgets.
+            </p>
+          </div>
+        </div>
 
-    <div>
-      02 Top 10 Laptops of 2022 Our best picks for various needs and budgets.
-    </div>
+        <div class="flex gap-4 lg:col-start-3 lg:gap-6">
+          <img
+            class="w-24 lg:min-h-full"
+            src="assets/images/image-gaming-growth.jpg"
+            alt="gaming-growth"
+          />
+          <div class="flex flex-col gap-1">
+            <span class="text-softRed lg:text-4xl font-bold">03</span>
+            <h2 class="text-veryDarkBlue lg:text-2xl font-extrabold">
+              The Growth of Gaming
+            </h2>
+            <p class="text-darkGrayishBlue lg:text-xl">
+              How the pandemic has <br />
+              sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
 
-    <div>
-      03 The Growth of Gaming How the pandemic has sparked fresh opportunities.
-    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <div
+      id="mobile-filter"
+      class="fixed top-0 left-0 w-full h-full z-10 backdrop-brightness-50 animate-filter-on hidden"
+    ></div>
+
+    <nav
+      id="mobile-menu"
+      class="fixed z-20 top-0 right-[-70%] h-full w-[70%] bg-offWhite animate-close-menu flex flex-col gap-20 px-5 py-7 hidden"
+    >
+      <div class="w-full flex justify-end">
+        <button id="close-menu">
+          <img src="assets/images/icon-menu-close.svg" alt="icon-close-menu" />
+        </button>
+      </div>
+
+      <ul class="flex flex-col gap-5 text-darkGrayishBlue text-lg">
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+    </nav>
+    <script src="js/script.js"></script>
   </body>
 </html>
